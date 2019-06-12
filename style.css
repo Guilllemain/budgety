@@ -280,3 +280,31 @@ h2 {
 
 .red { color: #FF5049;}
 .red-focus:focus { border-color: #FF5049; }
+
+
+/* handling icons */
+@font-face {
+    font-family: "Ionicons";
+    src: url("ionicons.ttf");
+}
+
+.ion-ios-checkmark-outline::before, .ion-ios-close-outline::before {
+    display: inline-block;
+    font-family: "Ionicons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.ion-ios-checkmark-outline:before {
+    content: "\f3fe"
+}
+
+.ion-ios-close-outline:before {
+    content: "\f405"
+}
